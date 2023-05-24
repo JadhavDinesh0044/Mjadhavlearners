@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>PracticeDynamicWebpages</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+        <servlet-name>MyGenericServlet</servlet-name>
+        <servlet-class>AssistedProjects.MyGenericServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MyGenericServlet</servlet-name>
+        <url-pattern>/mygeneric</url-pattern>
+    </servlet-mapping>
+    
+    <display-name>MyWebApp</display-name>
+
+    <filter>
+        <filter-name>LoggingFilter</filter-name>
+        <filter-class>AssistedProjects.LoggingFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>LoggingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    
+    <servlet>
+    <servlet-name>ServClasses</servlet-name>
+    <servlet-class>AssistedProjects.ServClasses</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>ServClasses</servlet-name>
+    <url-pattern>/greeting</url-pattern>
+</servlet-mapping>
+    
+    
+    
+</web-app>
