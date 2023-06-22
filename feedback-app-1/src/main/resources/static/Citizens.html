@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Citizens</title>
+</head>
+<body>
+    <div>
+        <a href="http://localhost:8086/citizens">Citizens</a> |
+        <a href="http://localhost:8086/vaccinationcenter">Vaccination Centers</a> |
+        <a href="http://localhost:8086/logout">Logout</a> |
+        <a href="http://localhost:8086/welcomeadmin">Welcome, Admin</a>
+    </div>
+
+    <h2>Citizens</h2>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>City</th>
+            <th>No of Doses Taken</th>
+            <th>Vaccination Status</th>
+            <th>Vaccination Center</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>John Doe</td>
+            <td>Example City</td>
+            <td>2</td>
+            <td>Fully Vaccinated</td>
+            <td>Center A</td>
+            <td>
+                <a href="http://localhost:8086/citizens/1">View</a> |
+                <a href="http://localhost:8086/citizens/1/edit">Edit</a> |
+                <a href="http://localhost:8086/citizens/1/delete">Delete</a>
+            </td>
+        </tr>
+        <!-- Repeat the above row for each citizen in the table -->
+    </table>
+
+    <button onclick="location.href='http://localhost:8086/citizens/new'">Add New Citizen</button>
+</body>
+</html>

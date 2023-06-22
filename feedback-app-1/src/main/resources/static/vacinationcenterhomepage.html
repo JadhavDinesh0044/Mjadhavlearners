@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vaccination Center Homepage</title>
+</head>
+<body>
+    <div>
+        <h1>Welcome, Admin!</h1>
+        <a href="http://localhost:8086/citizens">Citizens</a> |
+        <a href="http://localhost:8086/vaccinationcenter">Vaccination Centers</a> |
+        <a href="http://localhost:8086/logout">Logout</a> |
+        <a href="http://localhost:8086/welcomeadmin">Welcome, Admin</a>
+    </div>
+
+    <div>
+        <h2>Centers</h2>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>City</th>
+                <th>Action</th>
+            </tr>
+            <!-- Placeholder for dynamic vaccination center data -->
+            <!-- Replace this section with backend integration -->
+            <tr>
+                <td>1</td>
+                <td>Center 1</td>
+                <td>City 1</td>
+                <td>
+                    <a href="http://localhost:8086/vaccinationcenter/view/1">View</a> |
+                    <a href="http://localhost:8086/vaccinationcenter/delete/1">Delete</a> |
+                    <a href="http://localhost:8086/vaccinationcenter/edit/1">Edit</a>
+                </td>
+            </tr>
+            <!-- Repeat the above row structure for other centers -->
+        </table>
+    </div>
+
+    <div>
+        <a href="http://localhost:8086/vaccinationcenter/add">Add New Center</a>
+    </div>
+</body>
+</html>

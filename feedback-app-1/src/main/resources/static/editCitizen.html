@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Citizen</title>
+</head>
+<body>
+    <div>
+        <a href="http://localhost:8086/citizens">Citizens</a> |
+        <a href="http://localhost:8086/vaccinationcenter">Vaccination Centers</a> |
+        <a href="http://localhost:8086/logout">Logout</a> |
+        <a href="http://localhost:8086/welcomeadmin">Welcome, Admin</a>
+    </div>
+
+    <h2>Edit Citizen</h2>
+    <form action="http://localhost:8086/citizens/1" method="put">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="John Doe" required><br>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" value="Example City" required><br>
+
+        <label for="doses">No of Doses:</label>
+        <input type="number" id="doses" name="doses" value="2" required><br>
+
+        <label for="center">Vaccination Center:</label>
+        <select id="center" name="center">
+            <option value="Center A">Center A</option>
+            <option value="Center B">Center B</option>
+            <option value="Center C">Center C</option>
+        </select><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
