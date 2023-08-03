@@ -1,0 +1,19 @@
+<h2>Registration</h2>
+<link rel="stylesheet" href="registration.component.css">
+
+<div *ngIf="!registrationSuccess">
+  <form (ngSubmit)="register()" #registrationForm="ngForm">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" [(ngModel)]="userData.email" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" [(ngModel)]="userData.password" required>
+
+    <button type="submit" [disabled]="registrationForm.invalid">Register</button>
+  </form>
+</div>
+
+<div *ngIf="registrationSuccess">
+  <p class="success-message">Registration successful! You will be redirected to the login page.</p>
+</div>
+<img src="https://html.scribdassets.com/3uapwql3b479n7wp/images/1-c747cb50ef.jpg" alt="Aadhar" id="bottom-image">

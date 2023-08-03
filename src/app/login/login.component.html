@@ -1,0 +1,25 @@
+<h2>User Login</h2>
+<div *ngIf="!loginSuccess">
+  <form (ngSubmit)="login()" #loginForm="ngForm">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" [(ngModel)]="userData.email" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" [(ngModel)]="userData.password" required>
+
+    <button type="submit" [disabled]="loginForm.invalid">Login</button>
+  </form>
+</div>
+
+<div *ngIf="loginSuccess">
+  <div>
+    <p class="success-message">User login successful! You are now logged in.</p>
+
+    <p><a routerLink="/apply-for-aadhar">Click here</a> to apply for a new Aadhar card.</p>
+    <p><a routerLink="/view-aadhar-number">Click here</a> to view your assigned Aadhar number.</p>
+  </div>
+</div>
+<img
+  src="data:image/png;base64I ="
+  alt="Aadhar login" id="bottom-images">
+

@@ -1,0 +1,27 @@
+<h2>Admin Login</h2>
+<link rel="stylesheet" href="admin-login.component.css">
+
+<div *ngIf="!loginSuccess">
+  <form (ngSubmit)="login()" #loginForm="ngForm">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" [(ngModel)]="adminData.email" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" [(ngModel)]="adminData.password" required>
+
+    <button type="submit" [disabled]="loginForm.invalid">Login</button>
+  </form>
+</div>
+
+<div *ngIf="loginSuccess">
+  <p class="success-message">Admin login successful! You are now logged in as an admin.</p>
+  <ul>
+    <li><a routerLink="/approve-aadhar-request">Click here </a>for Approve new Aadhaar Card request</li>
+    <li><a routerLink="/verify-duplicate-aadhar">Click here </a>for Verify request for duplicate Aadhaar</li>
+    <li><a routerLink="/display-issued-aadhar">Click here</a> for Display all issued Aadhaar Card</li>
+    <li><a routerLink="/delete-aadhar-details">Click here</a> for Delete Aadhaar card details for dead citizen</li>
+  </ul>
+</div>
+<img
+  src="data:image/png;base64I="alt="Aadhar login" id="bottom-images">
+
