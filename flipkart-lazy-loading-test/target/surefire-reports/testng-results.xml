@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-02T12:34:21 IST" name="Flipkart Lazy Loading Test Suite" finished-at="2023-08-02T12:36:54 IST" duration-ms="152801">
+    <groups>
+    </groups>
+    <test started-at="2023-08-02T12:34:21 IST" name="Flipkart Lazy Loading Test" finished-at="2023-08-02T12:36:54 IST" duration-ms="152801">
+      <class name="com.example.flipkarttest.FlipkartLazyLoadingTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.flipkarttest.FlipkartLazyLoadingTest@3c947bc5]" started-at="2023-08-02T12:34:22 IST" name="setUp" finished-at="2023-08-02T12:34:23 IST" duration-ms="1950" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLazyLoading()[pri:0, instance:com.example.flipkarttest.FlipkartLazyLoadingTest@3c947bc5]" started-at="2023-08-02T12:34:23 IST" name="testLazyLoading" finished-at="2023-08-02T12:36:54 IST" duration-ms="150332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLazyLoading -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.flipkarttest.FlipkartLazyLoadingTest@3c947bc5]" started-at="2023-08-02T12:36:54 IST" name="tearDown" finished-at="2023-08-02T12:36:54 IST" duration-ms="479" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.example.flipkarttest.FlipkartLazyLoadingTest -->
+    </test> <!-- Flipkart Lazy Loading Test -->
+  </suite> <!-- Flipkart Lazy Loading Test Suite -->
+</testng-results>
